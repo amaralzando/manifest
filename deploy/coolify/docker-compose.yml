@@ -8,7 +8,7 @@ services:
       - DATABASE_URL=postgresql://manifest:${SERVICE_PASSWORD_POSTGRES}@postgres:5432/manifest
       - BETTER_AUTH_SECRET=${SERVICE_HEX_64_AUTH}
       - MANIFEST_ENCRYPTION_KEY=${SERVICE_HEX_64_ENCRYPTION}
-      - BETTER_AUTH_URL=${SERVICE_URL_MANIFEST_2099}
+      - BETTER_AUTH_URL=${BETTER_AUTH_URL}
       - MANIFEST_MODE=selfhosted
       - NODE_ENV=production
       - DB_POOL_MAX=10
